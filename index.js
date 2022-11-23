@@ -20,7 +20,7 @@ function decrease(){
     if (ran == 5 || ran == 7 ) {
 
         count++
-        var per = (count/click)*100;
+        var per = Math.floor ((count/click)*100);
         document.getElementById('id1').style.background = "red"
         document.getElementById('id2').innerHTML = "Hitted  " + count + 
         " times" + ' from ' + click + " clicks and its, " + per + " %" ;
